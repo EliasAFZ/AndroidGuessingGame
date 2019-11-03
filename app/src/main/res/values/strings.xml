@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">AndroidGuessingGame</string>
-    <string name="game_info">Set the number range!</string>
 
+    <!-- Main activity Strings -->
+    <string name="main_text_description">Set the number range</string>
+    <string name ="set_range_button">Set range</string>
+
+    <!-- Game activity Strings -->
+    <string name="game_text_description">Guess between \n%1d and %1d</string>
+    <string name ="guess_button">Guess</string>
+    <string name= "hint">Guess wide!</string>
+
+    <!-- Score activity Strings -->
+    <string name="score_text_description">You won?lost?test?</string>
+    <string name="play_again_button">play again</string>
 
 </resources>
