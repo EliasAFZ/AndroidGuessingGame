@@ -31,7 +31,7 @@ public class ScoreActivity extends AppCompatActivity {
 
     public void resetGame(View view) {
         Intent resetIntent = new Intent(this, MainActivity.class);
-        // clear previous backstack
+        // clears previous activities except for the activity that is already running being called.
         resetIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(resetIntent);
     }
