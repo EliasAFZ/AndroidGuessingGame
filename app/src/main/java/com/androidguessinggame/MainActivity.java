@@ -58,10 +58,10 @@ public class MainActivity extends AppCompatActivity {
 
         // set final value listener
         rangeSeekbar.setOnRangeSeekbarFinalValueListener(new OnRangeSeekbarFinalValueListener() {
-        @Override
-        public void finalValue(Number minValue, Number maxValue) {
-        Log.d("CRS=>", String.valueOf(minValue) + " : " + String.valueOf(maxValue));
-        }
+            @Override
+            public void finalValue(Number minValue, Number maxValue) {
+                Log.d("CRS=>", String.valueOf(minValue) + " : " + String.valueOf(maxValue));
+            }
         });
     }
 

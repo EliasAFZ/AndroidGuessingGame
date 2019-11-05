@@ -16,7 +16,7 @@ public class ScoreActivity extends AppCompatActivity {
         displayScore();
     }
 
-    public void displayScore(){
+    public void displayScore() {
         // grab previous activity values
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
@@ -25,13 +25,14 @@ public class ScoreActivity extends AppCompatActivity {
 
         TextView scoreText = findViewById(R.id.scoreText);
         scoreText.setText(getString(R.string.score_text_description,
-                                    randNumb,
-                                    numberOfGuesses));
-
+                randNumb,
+                numberOfGuesses));
     }
 
-    public void resetGame(View view){
+    public void resetGame(View view) {
         Intent resetIntent = new Intent(this, MainActivity.class);
+        // clear previous activity stacks
+        resetIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(resetIntent);
     }
 
