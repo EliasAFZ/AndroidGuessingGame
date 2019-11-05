@@ -21,17 +21,16 @@ public class MainActivity extends AppCompatActivity {
         seekbar();
     }
 
-
     public void setRange(View view) {
-        // Grab textviews of values
+        // Grab textviews
         TextView currentMinText = findViewById(R.id.minTextVal);
         TextView currentMaxText = findViewById(R.id.maxTextVal);
 
-        // convert the values from textviews to ints
-        String minRange = currentMinText.getText().toString();
-        String maxRange = currentMaxText.getText().toString();
+        // grab values of text views
+        final String minRange = currentMinText.getText().toString();
+        final String maxRange = currentMaxText.getText().toString();
 
-        // create our new intent to pass values onto new activity
+        // create our new intent to pass bundle of values onto new activity
         Intent gameScreenIntent = new Intent(this, GameActivity.class);
         Bundle extras = new Bundle();
         extras.putString("minRangeKey", minRange);

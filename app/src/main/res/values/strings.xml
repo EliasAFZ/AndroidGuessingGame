@@ -8,10 +8,13 @@
     <!-- Game activity Strings -->
     <string name="game_text_description">Guess between \n%1d and %1d</string>
     <string name ="guess_button">Guess</string>
-    <string name= "hint">Guess wide!</string>
+    <string name= "hint">Enter your guess</string>
+    <string name= "helper">Hint: guess wide to help you narrow it down</string>
 
     <!-- Score activity Strings -->
-    <string name="score_text_description">You won?lost?test?</string>
+    <string name="score_text_description">You won!
+                                         \nYou guessed the correct random number %1d
+                                         \nYou guessed a total number of %1d times.</string>
     <string name="play_again_button">play again</string>
 
 </resources>
