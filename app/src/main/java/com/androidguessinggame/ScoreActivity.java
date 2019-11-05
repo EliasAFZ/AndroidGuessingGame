@@ -32,7 +32,7 @@ public class ScoreActivity extends AppCompatActivity {
     public void resetGame(View view) {
         Intent resetIntent = new Intent(this, MainActivity.class);
         // clear previous activity stacks
-        resetIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+        resetIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(resetIntent);
     }
 
