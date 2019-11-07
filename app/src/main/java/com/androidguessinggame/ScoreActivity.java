@@ -1,5 +1,13 @@
 package com.androidguessinggame;
 
+/**
+ * Project Name: AndroidGuessingGame
+ * Date: 11/3/2019
+ * Description:
+ *
+ * @Author Elias Afzalzada
+ */
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
